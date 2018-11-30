@@ -1,0 +1,32 @@
+3 Sets of Data:
+
+- pull current tabsArray
+- pull tabs when: changed/added/removed
+
+- I save 1 session, to firebase
+- I save another session to firebase
+- I am, user:email, heading, content (array of: title, url, commit message)
+
+
+- users
+    - email
+        - UID
+            - tab group, name
+                - commit messages
+                    - msg1
+                    - msg2
+                - tab1
+                    - title
+                    - url
+                - tab2
+                    - title
+                    - url
+
+//========================================~
+- popup.html - for commands
+
+- script.js - saves tab data to localStorage (whenever there is a change in tab structure)
+
+
+
+- backgorund.js - does omnibox commands (takes commands and manipulates tab stuff(??))
