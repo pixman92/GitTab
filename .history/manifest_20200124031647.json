@@ -1,0 +1,31 @@
+{
+  "name": "Git Tab",
+  "version": "1.1",
+  "description": "Saving your TABS to and from Firebase!",
+  
+  "browser_action": {
+    "default_popup": "background.html"
+  },
+  "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://*.googleapis.com; object-src 'self'; connect-src 'self' https://*.firebaseio.com; script-src 'self' https://*.google.com object-src 'self'; script-src 'self' https://*.googleapis.com/* object-src 'self'; script-src 'self' https://*.firebaseapp.com object-src 'self'; script-src 'self' wss://*.firebaseio.com/* object-src 'self'",
+  "omnibox": { "keyword" : "git" },
+  "icons": { "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png" },
+    "permissions": [
+      "tabs",
+      "storage",
+      "activeTab",
+      "identity"
+    ],
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "oauth2": {
+      "client_id": "541665895148-bjjiu3484vfjr2ai43nd8ldvv44ignka.apps.googleusercontent.com",
+      "scopes": [
+        "https://www.googleapis.com/auth/userinfo.email"
+      ]
+    },
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkHSeztNOpMpJ6YftIGig8hIGbS4v6v+aKATOpDRxcpS3FnILYgE3Ta/8feMrmOz4PJtcnq5+Jv3KV1CnofaE8HYW/WbuuelAnEIA3VRYNGImpGzXJfajTcj3UiOjJTw2fA9QDz5aEIN++Z8CCaz8ckelFLXbzInZmZ/CQ2eUBPjhqJ+v4Nwfv5wrLzKfMjFID2gX0oDlDbTh8RkiK+RAgKcGtYZDwqp0tw693d/SOVX4cxb7qWn85MgohPaM3GLNajGh5n2FljYMX2cRJP0fFXzEfVWN4JhtbGGajmWpDfyKAiialM7Q5AafjTM40PWTd2/ZB/n4TgF1nBbcpIhxUQIDAQAB",
+    "manifest_version": 2
+  }
