@@ -10,13 +10,19 @@ var SingleTAB = function(title, tabs){
 
 
 
-
-
-
-var BIGTAB = function (SingleTAB){
-    if(this.singleTabArr==undefined){
-        this.singleTabArr = [];
-    }else{
-        this.singleTabArr.push(SingleTAB);
+class BIGTAB {
+    constructor(){
+        this.single=[];
+    //     this.single.push(SingleTAB);
     }
+
+    add(data){
+        this.single.push(data);
+        // return single;
+    }
+    get(){
+        return this.single;
+    }
+
+
 }
