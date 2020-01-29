@@ -6,8 +6,7 @@
 var userBIG;
 function makeOrGet(){
     if(pullBIG()==undefined){
-        userBIG = new BIGTAB();
-    }else{
-        userBIG = pullBIG();
+        userBIG = new
+
     }
 }

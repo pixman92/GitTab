@@ -12,9 +12,7 @@ var SingleTAB = function(title, tabs){
 
 class BIGTAB {
 
-    // big = new BIGTAB()
-    // big.add(single)
-    // big.get()[0] - > dates/title/tabs
+    //
 
 
     constructor(){
@@ -30,25 +28,18 @@ class BIGTAB {
         return this.single;
     }
 
-    addToStorage(){
-        chrome.storage.sync.set({'BIGTAB': this.single});
-    }
 
 }
 
-// function replaceBIGTABInStorage(BIGTAB){
-//     chrome.storage.sync.set({'BIGTAB': BIGTAB});
+function replaceBIGTABInStorage(BIGTAB){
+    chrome.storage.sync.set({'BIGTAB': BIGTAB});
 
-// }
+}
 
-var saveBIGTAB; var retrieved;
 function pullBIG(){
     chrome.storage.sync.get(['BIGTAB'], (result)=>{
-        saveBIGTAB = result.BIGTAB;
-        console.log('saveBIGTAB', saveBIGTAB);
-        return saveBIGTAB;
+        tmpObj = result.BIGTAB;
+        console.log('tmpObj', tmpObj);
+        return tmpObj;
     });
-
-    retrieved = new BIGTAB(saveBIGTAB);
-
 }

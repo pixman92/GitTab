@@ -30,25 +30,21 @@ class BIGTAB {
         return this.single;
     }
 
-    addToStorage(){
-        chrome.storage.sync.set({'BIGTAB': this.single});
-    }
 
 }
 
-// function replaceBIGTABInStorage(BIGTAB){
-//     chrome.storage.sync.set({'BIGTAB': BIGTAB});
+function replaceBIGTABInStorage(BIGTAB){
+    chrome.storage.sync.set({'BIGTAB': BIGTAB});
 
-// }
+}
 
-var saveBIGTAB; var retrieved;
+
 function pullBIG(){
-    chrome.storage.sync.get(['BIGTAB'], (result)=>{
+    
+    chrome.storage.sync.g
+    et(['BIGTAB'], (result)=>{
         saveBIGTAB = result.BIGTAB;
         console.log('saveBIGTAB', saveBIGTAB);
         return saveBIGTAB;
     });
-
-    retrieved = new BIGTAB(saveBIGTAB);
-
 }

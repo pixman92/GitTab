@@ -30,8 +30,8 @@ class BIGTAB {
         return this.single;
     }
 
-    addToStorage(){
-        chrome.storage.sync.set({'BIGTAB': this.single});
+    addToStorage(single){
+        chrome.storage.sync.set({'BIGTAB': BIGTAB});
     }
 
 }
