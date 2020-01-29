@@ -7,8 +7,6 @@ window.onload = ()=>{
         pullCurrentWindow();
     });
     document.getElementById('savedButton').addEventListener('click', ()=>{
-        showBackground();
-    });
 }
 
 //========================================
