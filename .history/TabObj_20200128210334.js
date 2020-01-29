@@ -46,14 +46,7 @@ function pullBIG(){
     chrome.storage.sync.get(['BIGTAB'], (result)=>{
         saveBIGTAB = result.BIGTAB;
         console.log('saveBIGTAB', saveBIGTAB);
-        retrieved = new BIGTAB();
-
-
-        // retrieved.add(saveBIGTAB);
-        for(var i=0; i<saveBIGTAB.length; i++){
-            retrieved.add(saveBIGTAB[0]);
-        }
-
+        retrieved = new BIGTAB(saveBIGTAB);
         return saveBIGTAB;
     });
 
