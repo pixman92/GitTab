@@ -6,7 +6,11 @@
 var userBIG;
 function makeOrGet(){
     try {
-       pullBIG();
+        if(pullBIG()==undefined){
+            userBIG = new BIGTAB();
+        }else{
+            userBIG = pullBIG();
+        }
 
     } catch (error) {
         console.log('error', error);

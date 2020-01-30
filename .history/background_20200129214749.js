@@ -5,10 +5,10 @@
 
 var userBIG;
 function makeOrGet(){
-    try {
-       pullBIG();
-
-    } catch (error) {
-        console.log('error', error);
+    try
+    if(pullBIG()==undefined){
+        userBIG = new BIGTAB();
+    }else{
+        userBIG = pullBIG();
     }
 }

@@ -5,5 +5,5 @@ https://*.firebaseio.com; script-src 'self' https://*.google.com object-src 'sel
 
 
 Input/Output
-- pullBIG() | Input:data (retrieved.single[i]) | Output:html
+- pullBIG() | Input:data () | Output:html
 - 

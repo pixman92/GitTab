@@ -33,11 +33,10 @@ function makeNice(){
 
 
 }
-var tabToObj;
+var tab
 function printAllSaved(){
     chrome.storage.sync.get(['tabSet'], (result)=>{
-        tabToObj = result.tabSet;
-        
+        tabSaved = result.tabSet;
     });
 
 }

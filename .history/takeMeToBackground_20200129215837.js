@@ -20,12 +20,11 @@ function pullCurrentWindow(){
     // works on getting current tabs
     // saving them to 'chrome' storage
     // and reproducing them in background.html
-    var tabGlobal = {};
+    var tabGlobal;
     chrome.tabs.query({currentWindow: true}, (tab)=>{
         console.log('tab', tab);
-        preGlobal = tab;
-        tabGlobal['title'] = document.getElementById('title').value;
-        tabGlobal['tabs'] = preGlobal;
+        tabGlobal = tab;
+        tabGlobal['BIGTitle'] = document.getElementById('title').value;
         chrome.storage.sync.set({'tabSet': tabGlobal});
 
     });

@@ -23,12 +23,8 @@ class BIGTAB {
     }
 
     add(data){
-        if(data){
-            this.single.push(data);
-        }else{
-            console.log('nothing to add');
-        }
-        console.log('remember to addToStorage()');
+        
+        this.single.push(data);
         // return single;
     }
     get(){

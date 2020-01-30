@@ -1,6 +1,6 @@
 //file for TAB object framework
 
-var SingleTABGroup = function(title, tabs){
+var SingleTAB = function(title, tabs){
     var tmpDate = new Date();
     this.date = tmpDate;
 
@@ -23,12 +23,7 @@ class BIGTAB {
     }
 
     add(data){
-        if(data){
-            this.single.push(data);
-        }else{
-            console.log('nothing to add');
-        }
-        console.log('remember to addToStorage()');
+        this.single.push(data);
         // return single;
     }
     get(){
@@ -48,7 +43,7 @@ class BIGTAB {
 
 var saveBIGTAB; var retrieved;
 function pullBIG(){
-    //retrieved - main Variable to work with
+    //retrie
     chrome.storage.sync.get(['BIGTAB'], (result)=>{
         saveBIGTAB = result.BIGTAB;
         console.log('saveBIGTAB', saveBIGTAB);

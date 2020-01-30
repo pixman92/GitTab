@@ -4,6 +4,3 @@
 https://*.firebaseio.com; script-src 'self' https://*.google.com object-src 'self'; script-src 'self' https://*.googleapis.com/* object-src 'self'; script-src 'self' https://*.firebaseapp.com object-src 'self'; script-src 'self' wss://*.firebaseio.com/* object-src 'self'",
 
 
-Input/Output
-- pullBIG() | Input:data (retrieved.single[i]) | Output:html
-- 

@@ -2,7 +2,7 @@
 window.onload = ()=>{
     // makeNice();
 
-    printAllSaved();
+    
 //    receiveMessage();
 }
 
@@ -33,15 +33,6 @@ function makeNice(){
 
 
 }
-var tabToObj;
-function printAllSaved(){
-    chrome.storage.sync.get(['tabSet'], (result)=>{
-        tabToObj = result.tabSet;
-        
-    });
-
-}
-
 
 
 

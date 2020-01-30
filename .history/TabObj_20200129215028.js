@@ -28,7 +28,7 @@ class BIGTAB {
         }else{
             console.log('nothing to add');
         }
-        console.log('remember to addToStorage()');
+        console.log('rember to addToStorage()', );
         // return single;
     }
     get(){

@@ -25,7 +25,7 @@ function pullCurrentWindow(){
         console.log('tab', tab);
         preGlobal = tab;
         tabGlobal['title'] = document.getElementById('title').value;
-        tabGlobal['tabs'] = preGlobal;
+        tabGlobal = preGlobal
         chrome.storage.sync.set({'tabSet': tabGlobal});
 
     });
