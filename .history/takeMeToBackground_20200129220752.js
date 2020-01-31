@@ -4,12 +4,9 @@ window.onload = ()=>{
             
         }
         chrome.storage.sync.set({'saveMe': true});
-        alert('true');
         pullCurrentWindow();
     });
     document.getElementById('savedButton').addEventListener('click', ()=>{
-        chrome.storage.sync.set({'saveMe': false});
-        alert('false');
         showBackground();
     });
 }

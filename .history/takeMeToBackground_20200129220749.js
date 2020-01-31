@@ -3,13 +3,10 @@ window.onload = ()=>{
         if(!document.getElementById('title').value){
             
         }
-        chrome.storage.sync.set({'saveMe': true});
-        alert('true');
+        chrome.storage.sync.set({'saveMe': fa});
         pullCurrentWindow();
     });
     document.getElementById('savedButton').addEventListener('click', ()=>{
-        chrome.storage.sync.set({'saveMe': false});
-        alert('false');
         showBackground();
     });
 }

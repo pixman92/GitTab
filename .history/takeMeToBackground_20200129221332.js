@@ -9,7 +9,6 @@ window.onload = ()=>{
     });
     document.getElementById('savedButton').addEventListener('click', ()=>{
         chrome.storage.sync.set({'saveMe': false});
-        alert('false');
         showBackground();
     });
 }

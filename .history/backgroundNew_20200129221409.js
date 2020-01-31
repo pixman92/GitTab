@@ -8,7 +8,6 @@ window.onload = ()=>{
         if(result.saveMe==true){
             pullBIG();
             retrieved.add()
-            chrome.storage.sync.set({'saveMe': false});
         }
     });
 
@@ -56,29 +55,6 @@ function makeObjects(){
     });
 
 }
-
-var saveBIGTAB; var retrieved;
-function pullBIG(){
-    //retrieved - main Variable to work with
-    chrome.storage.sync.get(['BIGTAB'], (result)=>{
-        saveBIGTAB = result.BIGTAB;
-        console.log('saveBIGTAB', saveBIGTAB);
-        retrieved = new BIGTAB();
-
-
-        // retrieved.add(saveBIGTAB);
-        for(var i=0; i<saveBIGTAB.length; i++){
-            retrieved.add(saveBIGTAB[0]);
-        }
-
-        return saveBIGTAB;
-    });
-
-
-}
-.
-
-
 
 //========================================
 
