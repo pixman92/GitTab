@@ -76,13 +76,15 @@ function pullBIG(){
 
 
 }
-.
+
 
 
 
 //========================================
 
 //functions to print out HTML
+// NEXT? - make functions for changing CSS
+
 
 
 

@@ -1,0 +1,7 @@
+
+
+2020, 02, 12 - 16:57:13 --- Setting up - getting CSS libraries (PURE & w3)
+
+2020, 02, 12 - 17:00:39 --- How to manuever the obj(s)? Saved and retrieved???
+
+2020, 02, 12 - 17:01:07 --- Needing to work with JS/CSS/HTML
