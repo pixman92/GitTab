@@ -5,3 +5,11 @@
 2020, 02, 12 - 17:00:39 --- How to manuever the obj(s)? Saved and retrieved???
 
 2020, 02, 12 - 17:01:07 --- Needing to work with JS/CSS/HTML
+
+2020, 02, 13 - 21:25:51 --- Starting back, over. Working on? - PURE CSS & W3 CSS
+
+2020, 02, 13 - 21:40:36 --- HTML 'cards' - working (?)
+
+2020, 02, 13 - 21:40:45 --- trying to make HTML Dynamic now
+
+2020, 02, 13 - 21:45:08 --- Make NEW obj when 'saved' - clicked, show OLD when 'background.html' - clicked
