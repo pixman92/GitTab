@@ -43,7 +43,6 @@ function makeNice(){
             tabSaved.tabs[i].date,'</div>',urlStr,'</div></div></div>']));       //critical to have all <div>(s) in correct closing, as in opening     
         }
         // console.log('str', str);
-        str = str.reverse();
         document.getElementById('submitHere').innerHTML = str;
         
         str="";

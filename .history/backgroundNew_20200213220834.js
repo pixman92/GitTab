@@ -1,6 +1,6 @@
 
 window.onload = ()=>{
-    makeNice();
+    // makeNice();
 
     makeObjects();
 
@@ -20,7 +20,7 @@ window.onload = ()=>{
 
 //file reserved for opening & deleting of grouped TAB objects
 //soon to be OLD
-var str=[]; var tabSaved="";
+var str=""; var tabSaved="";
 function makeNice(){
 
     chrome.storage.sync.get(['tabSet'], (result)=>{
@@ -39,11 +39,10 @@ function makeNice(){
         //========================================
         for(var i=0; i<tabSaved.tabs.length; i++){
             //required \" to make URL (a href) work!
-            str.push(makeStr(['<div class="pure-u-1-3"><div class="fontSmall margMe"><div class="w3-card-2 innerPad"><div><h2>', tabSaved.tabs[i].title, '</h2>',
-            tabSaved.tabs[i].date,'</div>',urlStr,'</div></div></div>']));       //critical to have all <div>(s) in correct closing, as in opening     
+            str+=makeStr(['<div class="pure-u-1-3"><div class="margMe"><div class="w3-card-2 innerPad"><div><h2>', tabSaved[i].title, '</h2>',
+            tabSaved[i].date,'</div>',urlStr,'</div></div><div>']);        
         }
         // console.log('str', str);
-        str = str.reverse();
         document.getElementById('submitHere').innerHTML = str;
         
         str="";

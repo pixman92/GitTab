@@ -29,8 +29,7 @@ function pullCurrentWindow(){
         preGlobal = tab;
         tabGlobal['title'] = document.getElementById('title').value;
         tabGlobal['tabs'] = preGlobal;
-        var dateTmp = new Date();
-        tabGlobal['dateStr'] = dateTmp.toString();
+        tabGlobal['dateStr'] = new Date();
         chrome.storage.sync.set({'tabSet': tabGlobal});
 
     });
