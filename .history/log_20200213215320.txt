@@ -17,10 +17,3 @@
 2020, 02, 13 - 21:46:20 --- NEXT? - work on NEW/OLD objs I/O
 
 2020, 02, 13 - 21:51:45 --- makeNice() - function. Making a string of HTML
-
-
-2020, 02, 13 - 21:53:36 --- Submit into 'submitHere' - id
-
-2020, 02, 13 - 21:55:56 --- Making HTML string, sorta working. Need a for loop now, to loop through all saved data
-
-2020, 02, 13 - 21:56:14 --- NEXT? - move to 'opening' all tabs from a saved Group
