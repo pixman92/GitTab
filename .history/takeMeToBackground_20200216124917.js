@@ -25,19 +25,16 @@ function pullCurrentWindow(){
     // and reproducing them in background.html
     var tabGlobal = {};
     chrome.tabs.query({currentWindow: true}, (tab)=>{
-        // console.log('tab', tab);
+        console.log('tab', tab);
         preGlobal = tab;
-        console.log('preGlobal', preGlobal);
-
         tabGlobal['title'] = document.getElementById('title').value;
         tabGlobal['tabs'] = preGlobal;
         var dateTmp = new Date();
         tabGlobal['dateStr'] = dateTmp.toString();
-        console.log('tabGlobal', tabGlobal);
         chrome.storage.sync.set({'tabSet': tabGlobal});
 
     });
-    // console.log('tabGlobal1', tabGlobal);
+    console.log('tabGlobal1', tabGlobal);
     
     
     // showBackground();

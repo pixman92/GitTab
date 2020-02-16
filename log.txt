@@ -26,3 +26,13 @@
 2020, 02, 13 - 21:56:14 --- NEXT? - move to 'opening' all tabs from a saved Group
 
 2020, 02, 13 - 22:20:06 --- Array of Tabs, getting there. Need to work on data saved and data extracted
+
+2020, 02, 15 - 23:44:32 --- ============================================
+
+2020, 02, 16 - 13:18:31 --- I need to take <tabGlobal> and somehow organize it into BIGTab and SingleTab
+
+2020, 02, 16 - 13:41:53 --- ===============================
+
+2020, 02, 16 - 13:42:28 --- Formatting Containers - working. Wrapping Text - working
+
+2020, 02, 16 - 13:42:55 --- NEXT? - Bold H2 tags, scrool URLs, clickable 1 container

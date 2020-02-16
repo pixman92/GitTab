@@ -1,8 +1,8 @@
 //file for TAB object framework
 
 var SingleTABGroup = function(title, tabs, date){
-    // var tmpDate = new Date();
-    this.date = date;
+    var tmpDate = new Date();
+    this.date = tmpDate;
 
     this.title = title;
     this.tabs = tabs;

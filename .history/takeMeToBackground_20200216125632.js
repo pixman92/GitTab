@@ -37,7 +37,7 @@ function pullCurrentWindow(){
         chrome.storage.sync.set({'tabSet': tabGlobal});
 
     });
-    // console.log('tabGlobal1', tabGlobal);
+    console.log('tabGlobal1', tabGlobal);
     
     
     // showBackground();

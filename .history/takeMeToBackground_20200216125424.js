@@ -33,11 +33,10 @@ function pullCurrentWindow(){
         tabGlobal['tabs'] = preGlobal;
         var dateTmp = new Date();
         tabGlobal['dateStr'] = dateTmp.toString();
-        console.log('tabGlobal', tabGlobal);
         chrome.storage.sync.set({'tabSet': tabGlobal});
 
     });
-    // console.log('tabGlobal1', tabGlobal);
+    console.log('tabGlobal1', tabGlobal);
     
     
     // showBackground();

@@ -58,18 +58,18 @@ function makeNice(){
     //========================================
     for(var i=0; i<retrieved.single.length; i++){
         //required \" to make URL (a href) work!
-        str.push(makeStr(['<div class="pure-u-1-3"><div class="fontSmall margMe wrappingText"><div class="w3-card-2 innerPad"><div><h2>', retrieved.single[i].title, '</h2>', retrieved.single[i].date,'</div>',urlStr,'</div></div></div>']));       //critical to have all <div>(s) in correct closing, as in opening     
+        str.push(makeStr(['<div class="pure-u-1-3"><div class="fontSmall margMe"><div class="w3-card-2 innerPad"><div><h2>', retrieved.single[i].title, '</h2>',
+        retrieved.single[i].date,'</div>',urlStr,'</div></div></div>']));       //critical to have all <div>(s) in correct closing, as in opening     
         for(var j=0; j < retrieved.single[i].tabs.length; j++) {
-            urlStr += makeStr(['<div>\"', retrieved.single[i].tabs[j].url,'\"</div>']);
+            urlStr += makeStr(['<div>', retrieved.single[j].tabs.url, '</div>']);
             
         }
     }
     // console.log('str', str);
-    str = str.reverse();
-    str = str.join('');
+    str = str.reverse
     document.getElementById('submitHere').innerHTML = str;
     
-    // str="";
+    str="";
 }
 
 //========================================
@@ -128,7 +128,7 @@ function pullBIG(){
 //========================================
 
 function makeStr(arr){
-    return arr.join('');
+    return arr.join("")
 }
 
 function wait(timout){
